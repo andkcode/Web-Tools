@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web - Tools</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-        </style>
-    <div class="container">
-        <div class="topbar">
-            <button id="clock">Clock</button>
-        </div>
-        <div class="head">
-            <div class="left">
-                <p id="date"></p>
-                <p id="day"></p>
-            </div>
-            <div class="right">
-                <p id="month"></p>
-                <p id="year"></p>
-            </div>
-        </div>
-    </div>
-<script>
 const date = document.getElementById("date");
 const day = document.getElementById("day");
 const month = document.getElementById("month");
@@ -51,6 +23,3 @@ document.getElementById("clock").addEventListener("click", function () {
     localStorage.setItem("oldPageContent", oldPageContent); 
     window.location.href = "clock.html"; 
 })
-</script>
-</body>
-</html>
