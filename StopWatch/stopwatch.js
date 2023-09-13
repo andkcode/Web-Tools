@@ -34,3 +34,27 @@ document.getElementById("reset-timer").addEventListener("click", () => {
     [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
     timerRef.innerHTML = "00 : 00 : 00 : 000";
 });
+
+document.getElementById("clock").addEventListener("click", function () {
+    let oldPageContent = document.documentElement.innerHTML; 
+    localStorage.setItem("oldPageContent", oldPageContent); 
+    window.location.href = "../Clock/clock.html"; 
+});
+
+document.getElementById("calculator").addEventListener("click", function () {
+    let oldPageContent = document.documentElement.innerHTML; 
+    localStorage.setItem("oldPageContent", oldPageContent); 
+    window.location.href = "../Calculator/calculator.html"; 
+});
+
+document.getElementById("stopwatch").addEventListener("click", function () {
+    let oldPageContent = document.documentElement.innerHTML; 
+    localStorage.setItem("oldPageContent", oldPageContent); 
+    window.location.href = "../StopWatch/stopwatch.html"; 
+});
+
+document.getElementById("calendar").addEventListener("click", function () {
+    let oldPageContent = document.documentElement.innerHTML; 
+    localStorage.setItem("oldPageContent", oldPageContent); 
+    window.location.href = "../Calendar/calendar.html"; 
+});

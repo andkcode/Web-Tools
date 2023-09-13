@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.topbar{
+    border-radius: 50px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    position:fixed;
+    background-color: #ffffff;
+    margin: 10px;
+    left:38.5%;
+    transition: top 0.3s; 
+}
+
+.topbar ul li:hover i {
+    transform: scale(2.0); 
+    transition: transform 0.3s ease; 
+    color: #3776c2; 
+    transition: color 0.6s ease; 
+}
+
+.topbar ul {
+    list-style: none;
+    padding:0;
+    text-align:center;
+}
+
+.topbar li{
+    display:inline;
+    margin: 0 20px;
+}
+
+.topbar ul li {
+    padding: 10px;
+    margin: 10px;
+    color: #777;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.6s ease; 
+}
+
+#clock, #calendar, #stopwatch, #calculator {
+font-size:30px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #4158D0,#C850C0,#FFCC70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.left, .right {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+.right{
+    background:linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    color: #fff;
+    width: 42%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left{
+    width: 58%;
+}
+#date {
+    font-size: 100px;
+    line-height: 90px;
+}
+#month {
+    font-size: 20px;
+}

@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StopWatch</title>           
-    <link rel="stylesheet" href="stopwatch.css".css">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="stopwatch.css"> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">       
 </head>
-<body>
-    <div class = "container">
+<body> 
+    <div class="topbar">
+        <ul>
+            <li><a id="clock"><i class="uil uil-clock"></i></a></li>
+            <li><a id="calculator"><i class="uil uil-calculator"></i></a></li>
+            <li><a id="stopwatch"><i class="uil uil-stopwatch"></i></a></li>
+            <li><a id="calendar"><i class="uil uil-calender"></i></a></li>
+        </ul>
+    </div>
+    <div class="container">
         <div class="timer-display">00 : 00 : 00 : 000</div>
         <div class="buttons">
             <button id="pause-timer">Pause</button>

@@ -1,20 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 
 * {
+    user-select: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #dbe9ff;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    min-height: 100vh;
+}
+.topbar{
+    border-radius: 50px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    position:absolute;
+    background-color: #ffffff;
+    margin: 10px;
+    left:38.5%;
+    transition: top 0.3s; 
+}
+.topbar ul li:hover i {
+    transform: scale(2.0); 
+    transition: transform 0.3s ease; 
+    color: #3776c2; 
+    transition: color 0.6s ease; 
+}
+
+.topbar ul {
+    list-style: none;
+    padding:5px;
+    text-align:center;
+}
+
+.topbar li{
+    display:inline;
+    margin: 0 20px;
+}
+
+.topbar ul li {
+    padding: 10px;
+    margin: 10px;
+    color: #777;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.6s ease; 
+}
+
+#clock, #calendar, #stopwatch, #calculator {
+font-size:30px;
 }
 
 .container {
     background-color: #f0f9ff;
-    position:absolute;
+    position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% ); 
     top: 50%;
     width: min(90%, 31.25em);
     padding: 3.75em 0;
@@ -27,6 +68,7 @@ body {
     width: 110%;
     background-color: #3c98ff;
     left: -5%;
+    background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
     padding: 1em 0;
     color: #f0f9ff;
     font-size: 2.5em;
@@ -58,7 +100,6 @@ body {
 }
 
 #start-timer {
-    background-color: #3c98ff;
+    background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
     color: #f0f9ff;
 }
-
